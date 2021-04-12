@@ -128,10 +128,6 @@ body {
 
 		@media (max-width: 480px) {
 			padding: 5rem 7.5%;
-		}
-
-		@media (max-width: 320px) {
-			font-size: 12px;
 
 			section {
 				padding: 2.5rem 2rem;
@@ -140,6 +136,10 @@ body {
 					bottom: 2.5rem;
 				}
 			}
+		}
+
+		@media (max-width: 320px) {
+			font-size: 12px;
 		}
 	}
 }
