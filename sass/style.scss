@@ -1,1 +1,87 @@
-@import 'base';
+@import "base";
+
+body {
+	background: $Very-light-gray;
+	display: grid;
+	place-items: center;
+	padding-bottom: 1rem;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 15px;
+
+	main {
+		width: 100%;
+		height: 100%;
+		padding: 10rem 17.5rem;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 3.5rem;
+
+			&:first-child {
+				border-top-left-radius: $Br-desktop;
+				border-bottom-left-radius: $Br-desktop;
+				background: $Bright-orange;
+
+				button {
+					color: $Bright-orange;
+				}
+			}
+
+			&:nth-child(2) {
+				background: $Dark-cyan;
+
+				button {
+					color: $Dark-cyan;
+				}
+			}
+
+			&:last-child {
+				border-top-right-radius: $Br-desktop;
+				border-bottom-right-radius: $Br-desktop;
+				background: $Very-dark-cyan;
+
+				button {
+					color: $Very-dark-cyan;
+				}
+			}
+
+			h2 {
+				color: $Very-light-gray;
+				text-transform: uppercase;
+				font-family: "Big Shoulders Display", cursive;
+				font-size: 2.5em;
+				margin: 2.5rem 0;
+			}
+
+			p {
+				color: $Transparent-white;
+				line-height: 1.875;
+				letter-spacing: 0.125rem;
+				font-size: 0.875em;
+				margin-bottom: 7.5rem;
+			}
+
+			button {
+				padding: 1rem 2.5rem;
+				font-size: 0.875em;
+				background: $Very-light-gray;
+				color: transparent;
+				border: thin solid;
+				border-radius: 5rem;
+				cursor: pointer;
+				transition: 0.25s;
+
+				&:hover {
+					background: transparent;
+					color: $Very-light-gray;
+				}
+			}
+		}
+	}
+}
